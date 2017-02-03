@@ -1,0 +1,444 @@
+/*
+  Theme Name: LawrenceVdotZero
+  Theme URI: LawrenceStewart.ca
+  Author:  Lawrence Stewart
+  Desctription: A basic blog theme.  Responsive design with integrated video posts.
+  Version: 0.8
+*/
+/* move special fonts to HTML head for better performance */
+/* @import url('http://fonts.googleapis.com/css?family=Open+Sans:200,300,400,600,700'); */
+
+/* my basics for rd */
+img {
+    width:100%;
+    height:auto;
+}
+img.size-full {
+    width:auto;
+}
+/* custom template */
+html {
+    
+} 
+body {
+    font-family: Verdana, Geneva, sans-serif;
+    min-height:100%;
+    background: #f1f1f1;
+    /* background-image:url("images/wavecut.png"); */
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: Verdana, Geneva, sans-serif
+}
+a {
+  color:#222222;
+}
+
+.wrapper, .row {
+   height: 100%;
+   margin-left:0;
+   margin-right:0;
+}
+
+.wrapper:before, .wrapper:after,
+.column:before, .column:after {
+    content: "";
+    display: table;
+}
+
+.wrapper:after,
+.column:after {
+    clear: both;
+}
+
+.column {
+    /* height: 100%; */
+    *zoom:1;
+}
+
+.box {
+  	bottom: 0; /* increase for footer use */
+    left: 0;
+    position: relative;
+    right: 0;
+    top: 0;
+    background-size:cover;
+    background-attachment:fixed;
+}
+
+.divider {
+	margin-top:32px;
+}
+
+#main {
+    padding:70px
+}
+
+#sidebar {
+    position:absolute;
+    height:100%;
+    padding:70px 0;
+    background-color:#ffffff;
+    box-shadow: 3px 3px 3px #888888;
+    -moz-box-shadow: 3px 3px 3px #888888;
+    -webkit-box-shadow: 3px 3px 3px #888888;
+}
+.sidebar-content {
+    float:right;
+    width:75%;
+    max-width:370px;
+    padding-right:20%;
+}
+
+#sidebar h1.site-title {
+    letter-spacing: 6px;
+    font-size:26px;
+    font-weight:500;
+    text-decoration:none;
+    text-shadow: 1px 0 1px #888888;
+    text-align:center;
+    margin: 10px 0;
+    text-transform: uppercase;
+}
+.branding 1 {
+    display:block;
+}
+.branding .logo {
+    width:40%;
+    margin:0 auto;
+}
+.branding .logo img {
+    max-height:300px;
+}
+#sidebar-footer {
+  position:absolute;bottom:5px;
+}
+#content {
+    height:auto;
+}
+#footer {
+    margin: 40px -70px -70px;
+    padding: 20px 70px;
+}
+.page-header {
+    background:#fff;
+    border-left: 7px solid #333;
+    padding:6% 10%;
+    text-transform:uppercase;
+}
+.page-header h1 {
+    margin: 0;
+    margin-left:-7px;
+    font-size:32px;
+}
+.post {
+    position:relative;
+    margin-bottom: 70px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 1px #888888;
+    -moz-box-shadow: 1px 1px 3px 1px #888888;
+    -webkit-box-shadow: 1px 1px 3px 1px #888888;
+}
+.post-content a {
+    color: #337ab7;
+}
+.page {
+    position:relative;
+    margin-bottom: 70px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 1px #888888;
+    -moz-box-shadow: 1px 1px 3px 1px #888888;
+    -webkit-box-shadow: 1px 1px 3px 1px #888888;
+    padding-bottom:10%;
+}
+.post-header {
+    padding-top: 6%;
+}
+.post-header h2 {
+    margin-top: 6%;
+    padding: 0 10% 0;
+}
+.format-status .post-header h2 {
+    display:none;
+}
+.post-header .feature-img {
+    margin-bottom: 6%;
+    margin-top: -6%;
+}
+.post-header .video-100 {
+    margin-bottom: 6%;
+    margin-top: -6%;
+}
+.post-content {
+    padding:0 10%;
+    margin:6% 0;
+}
+.post-footer {
+    padding:6% 10% 6%;
+    background-color: #f7f7f7;
+    overflow:auto;
+    width: 100%;
+}
+.post-footer .post-meta {
+    float:left;
+    margin:0 10px;
+}
+
+.nav {
+    border-left:2px solid;
+    margin:30px 0;
+}
+.nav a {
+    font-size:16px;
+    text-shadow:1px 0 1px #888888;
+}
+.pagenate-link {
+    background: #fff;
+    box-shadow: 1px 1px 3px 1px #888888;
+    -moz-box-shadow: 1px 1px 3px 1px #888888;
+    -webkit-box-shadow: 1px 1px 3px 1px #888888;
+}
+.pagenate-link a {
+    padding: 6% 10%;
+    width: 100%;
+    font-size: 16px;
+    text-shadow: 1px 0 1px #888888;
+    display: block;
+    font-size: 16px;
+    text-shadow: 1px 0 1px #888888;
+    overflow:hidden;
+}
+.pagenate-link.nav-next .pagenate-meta {
+    float: left;
+}
+.pagenate-link.nav-previous .pagenate-meta {
+    float:right;
+}
+.pagenate-single.nav-next .pagenate-meta {
+    float: right;
+}
+.pagenate-single.nav-previous .pagenate-meta {
+    float:left;
+}
+.pagenate-meta .meta-nav {
+    float: left;
+    width: 100%;
+}
+.pagenate-meta .post-title {
+    float: left;
+    width: 100%;
+}
+.menu-switch {
+    display:none;
+}
+
+/* search */
+.search-form label {
+ width:100%;
+}
+/* fa icon for post formats */
+.fa.post-format-status:before {
+    content: "\f0a1";
+}
+.fa.post-format-standard:before {
+    content: "\f24a";
+}
+.fa.post-format-video:before {
+    content: "\f04b";
+}
+.fa.post-format-link:before {
+    content: "\f0c1";
+}
+.fa.post-format-gallery:before {
+    content: "\f03e";
+}
+/* Social Icons */
+.social-networks {
+    text-align:center;
+    width:100%;
+    margin:10px 0;
+}
+.social-networks a {
+    width: calc(100% / 5);
+    display: inline-block;
+    margin:7px 0;
+}
+.fa-social {
+    font-size:26px;
+}
+.fa-instagram-square:before {
+    content: "\f16d";
+}
+.fa-stack-overflow-square:before {
+    content: "\f16c";
+}
+
+/* lists */
+ul.no-style-list {
+    list-style-type:none;
+    margin:0;
+    padding:0;
+}
+.lightbox-modal .close {
+    margin-bottom: -25px;
+    position: relative;
+    top: -18px;
+    right: -16px;
+}
+.comment-box {
+    position:relative;
+    margin-bottom: 70px;
+    background-color: #fff;
+    box-shadow: 1px 1px 3px 1px #888888;
+    -moz-box-shadow: 1px 1px 3px 1px #888888;
+    -webkit-box-shadow: 1px 1px 3px 1px #888888;
+    padding:6% 10%;
+    
+}
+.comment-author.vcard {
+    
+}
+.comment {
+    padding: 20px 0;
+    border-top: 1px solid #eee;
+}
+.comment .comment {
+    margin-left:10%;
+}
+.comment:last-child {
+    padding: 20px 0;
+    border-bottom: 1px solid #eee;
+}
+.comment-meta {
+    margin-bottom:6%;
+}
+.comment-author.vcard img {
+    max-width:56px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    box-shadow: 1px 1px 2px 0 #888888;
+    -webkit-box-shadow: 1px 1px 2px 0  #888888;
+    -moz-box-shadow: 1px 1px 2px 0 #888888;
+    margin-right: 4%;
+    float:left;
+}
+.comment-author.vcard .says {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0,0,0,0);
+    border: 0;   
+}
+.comment-content {
+    clear: both;
+}
+img.circle-100 {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    box-shadow: 1px 1px 3px 1px #888888;
+    -webkit-box-shadow: 1px 1px 3px 1px #888888;
+    -moz-box-shadow: 1px 1px 3px 1px #888888;
+}
+/* center and adjust the sidebar contents on smaller devices */
+@media (max-width: 767px) {
+    #main {
+        padding: 0;
+        margin-left:-15px;
+        margin-right:-15px;
+    }
+    #sidebar {
+        position:relative;
+        height:auto;
+    }
+    .column {
+        height:auto;
+        overflow:inherit;
+    }
+    .post {
+        margin-bottom:10px;
+    }
+  #sidebar {
+    padding:10px 0 0;
+    text-align:center;
+    margin:0 auto;
+  }
+    #sidebar .sidebar-content {
+        float:none;
+        width: 75%;
+        max-width: 370px;
+        margin: 0 auto;
+        padding: 0 10%;
+    }
+  #sidebar a.logo {
+    font-size:50px;
+    height:75px;
+    width:75px;
+    margin-bottom:30px;
+  }
+    
+  /* SideBar Display */
+    
+    .menu-wrap {
+        overflow:hidden;
+        height:25px;
+    }
+    .menu-switch {
+        display:block;
+        color:#222222;
+    }
+    .menu-switch:hover, .menu-switch:focus{
+        cursor:pointer;
+        color: #337ab7;
+    }
+    .menu-switch.fa{
+        font-weight:900;
+        font-size:22px;
+        text-shadow: 1px 0 1px #888888;
+    }
+    .menu-switch:before {
+        content: "\f103";
+    }
+    .sidebar-collapse {
+        display:none;
+    }
+    .nav {
+        margin:0;
+        margin-bottom:10px;
+    }
+    .menu-wrap.show {
+        display:block;
+        height:100%;
+    }
+    .menu-wrap.show .menu-switch:before {
+        content: "\f102";
+
+    }
+}
+
+
+
+
+/* bootstrap overrides */
+.container-fluid {
+    padding: 0 !important;
+}
+.modal-backdrop {
+    z-index:0;
+}
+.jumbotron {
+  background-color:transparent;
+}
+.label-default {
+  background-color:#dddddd;
+}
+small.text-muted {
+  font-family:courier,courier-new,monospace;
+}

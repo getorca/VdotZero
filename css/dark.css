@@ -1,0 +1,13 @@
+/* 
+Dark css
+*/
+body {
+    /*background-image:url("../images/geodark.png");*/
+    background-color: #F4FF81;
+}
+#sidebar {
+    background-color: #FFE800;;
+}
+#sidebar a {
+    color: #337ab7;
+}
